@@ -1,0 +1,14 @@
+version: "3"
+services:
+  ubuntu18.04:
+    build:
+      context: .
+    volumes:
+      - ./work:/var/work:rw
+    cap_add:
+      - SYS_PTRACE
+    networks:
+      - default
+    tty: true
+networks:
+  default:
