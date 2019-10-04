@@ -27,21 +27,21 @@ gcc -o a a.c -g
 ## gdb 是 gcc编译后debug工具
 gcc记得带上-g参数，才能gdb
 
-start: 开始debug
+* 1、start: 开始debug
 
-p a: 打印a字段
+* 2、p a: 打印a字段
 
-l : 列出源码
+* 3、l : 列出源码
 
-n : 下一步
+* 4、n : 下一步
 
-bt : 看栈
+* 5、bt : 看栈
 
-f 1 : 看第一层栈信息
+* 6、f 1 : 看第一层栈信息
 
-x/3d 0x7fffffffde1c ： 在0x7fffffffde1c地址后以十进制显示往后3个内容
+* 7、x/3d 0x7fffffffde1c ： 在0x7fffffffde1c地址后以十进制显示往后3个内容
 
-x/6cb 0x7fffffffde1c ： 例如打印hello,6是指5个字符末尾以\0结尾，c是字符串打印，b是字节单位。
+* 8、x/6cb 0x7fffffffde1c ： 例如打印hello,6是指5个字符末尾以\0结尾，c是字符串打印，b是字节单位。
 
 
 
