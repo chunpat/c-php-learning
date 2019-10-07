@@ -24,7 +24,8 @@ int main() {
     int *pb = &b;
     int *pglobal = &global;
     int (*pquadrate)(int a) = &quadrate;
-    int s = quadrate(a);
+    // int s = quadrate(a);
+    int s = (*pquadrate)(a);
     printf("%d\n",s);
     return 0;
 }
