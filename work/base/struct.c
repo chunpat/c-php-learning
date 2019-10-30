@@ -2,10 +2,10 @@
 int main(){
 	struct _s{
 		char a;
-		unsigned int b;
-		unsigned long c;
+		int b;
+		long c;
 		void* d;
-		unsigned int e;
+		int e;
 		char* f;
 	} s;
 	s.a = 'a';
